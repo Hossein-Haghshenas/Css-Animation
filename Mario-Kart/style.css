@@ -7,10 +7,27 @@
 }
 
 .sky {
+  position: relative;
   background: rgba(66, 85, 252, 0.842);
   width: 100%;
   height: 35%;
 }
+
+.cloud {
+  position: absolute;
+  width: 15rem;
+  animation: cloud 5s 0.5s infinite alternate-reverse linear;
+}
+
+@keyframes cloud {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 60%;
+  }
+}
+
 .grass {
   background: rgba(66, 252, 122, 0.842);
   width: 100%;
