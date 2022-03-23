@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.sky {
+  background: rgba(66, 85, 252, 0.842);
+  width: 100%;
+  height: 35%;
+}
+.grass {
+  background: rgba(66, 252, 122, 0.842);
+  width: 100%;
+  height: 25%;
+}
+.Road {
+  position: relative;
+  background: rgba(90, 90, 90, 0.562);
+  border: 12px solid rgb(61, 61, 61);
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  height: 40%;
+}
+.line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  border: 6px dashed rgb(61, 61, 61);
+}
