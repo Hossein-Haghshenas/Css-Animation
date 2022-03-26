@@ -24,3 +24,60 @@ header span i {
   font-size: 2rem;
   cursor: pointer;
 }
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 4rem 10rem;
+}
+.products li {
+  margin: 2rem;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+  border: 1px solid rgba(121, 121, 121, 0.315);
+  border-radius: 1rem;
+}
+img {
+  width: 10rem;
+  height: 10rem;
+}
+.products li h4 {
+  margin: 1rem 0;
+}
+.products li button {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(121, 121, 121, 0.315);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.products li button:hover {
+  background: #000;
+  color: rgb(255, 255, 255);
+}
+
+.zoom {
+  position: absolute;
+  top: 1rem;
+  right: 50%;
+  width: 2.1rem;
+  height: 2.1rem;
+  opacity: 0;
+  animation: zoom 1.5s both linear;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  98% {
+    right: 21%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
