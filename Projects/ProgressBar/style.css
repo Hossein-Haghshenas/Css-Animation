@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(6, 0, 13);
+  background: radial-gradient(
+    circle,
+    rgba(6, 0, 13, 1) 38%,
+    rgba(119, 0, 255, 1) 100%,
+    rgba(0, 0, 101, 0.9612219887955182) 100%
+  );
+  color: antiquewhite;
+}
