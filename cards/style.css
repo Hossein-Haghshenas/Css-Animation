@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.863);
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: azure;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 17rem;
+}
+
+.front,
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  height: 10rem;
+  color: aliceblue;
+  font-family: cursive;
+  text-transform: uppercase;
+}
+
+.items li {
+  background-color: rgb(255, 255, 255);
+}
+
+.items li:nth-child(1) .front {
+  background-color: rgb(255, 108, 108);
+}
+
+.items li:nth-child(1) .back {
+  background-color: rgba(255, 108, 108, 0.85);
+}
+
+.items li:nth-child(2) .front {
+  background-color: rgb(57, 30, 209);
+}
+
+.items li:nth-child(2) .back {
+  background-color: rgba(57, 30, 209, 0.85);
+}
+
+.items li:nth-child(3) .front {
+  background-color: rgb(212, 50, 226);
+}
+
+.items li:nth-child(3) .back {
+  background-color: rgba(211, 50, 226, 0.85);
+}
+
+.items li:nth-child(4) .front {
+  background-color: rgb(93, 184, 58);
+}
+
+.items li:nth-child(4) .back {
+  background-color: rgba(94, 184, 58, 0.85);
+}
+
+.items li:nth-child(5) .front {
+  background-color: rgb(172, 108, 255);
+}
+
+.items li:nth-child(5) .back {
+  background-color: rgba(172, 108, 255, 0.85);
+}
+
+.items li:nth-child(6) .front {
+  background-color: rgb(182, 209, 30);
+}
+
+.items li:nth-child(6) .back {
+  background-color: rgba(182, 209, 30, 0.85);
+}
+
+.items li:nth-child(7) .front {
+  background-color: rgb(226, 120, 50);
+}
+
+.items li:nth-child(7) .back {
+  background-color: rgba(226, 120, 50, 0.85);
+}
+
+.items li:nth-child(8) .front {
+  background-color: rgb(184, 58, 58);
+}
+
+.items li:nth-child(8) .back {
+  background-color: rgba(184, 58, 58, 0.85);
+}
+
+/* animation */
+
+.back {
+  transform: rotateY(90deg);
+}
+.front {
+  position: absolute;
+}
+
+.items li:hover .front {
+  animation: rotate 0.3s ease-in forwards;
+}
+
+.items li:hover .back {
+  animation: rotate 0.3s 0.2s ease-out forwards reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(90deg);
+  }
+}
